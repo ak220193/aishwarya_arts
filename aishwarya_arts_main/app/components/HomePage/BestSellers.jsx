@@ -63,7 +63,7 @@ const BestSellers = () => (
             </button>
             {/* New Tag */}
             {product.isNew && (
-              <span className="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-md">
+              <span className="absolute top-3 left-0 bg-emerald-600 text-white text-lg font-semibold px-6 py-2 rounded-md">
                 New
               </span>
             )}
