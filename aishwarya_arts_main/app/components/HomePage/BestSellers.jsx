@@ -20,7 +20,7 @@ const BestSellers = () => (
       >
         Best Sellers
       </h1>
-      <p className="text-black text-sm max-w-xl mx-auto">
+      <p className="text-black text-lg max-w-xl mx-auto">
         Discover our most admired handmade artworks — crafted with precision and
         passion to bring culture and creativity home.
       </p>
@@ -70,21 +70,21 @@ const BestSellers = () => (
           </figure>
 
           {/* Product Content */}
-          <div className="p-6 flex flex-col justify-between">
+          <div className="p-6 flex flex-col justify-between cursor-pointer">
             <header>
               <h2
                 itemProp="name"
-                className="text-lg font-semibold text-gray-800 group-hover:text-yellow-600 transition"
+                className="text-lg font-semibold text-gray-800 transition"
               >
                 {product.title}
               </h2>
               <p
                 itemProp="description"
-                className="text-sm text-gray-600 mt-2 line-clamp-2"
+                className="text-md text-gray-600 mt-2 line-clamp-2"
               >
                 {product.description}
               </p>
-              <p className="text-sm text-black mt-1">
+              <p className="text-md text-black mt-1">
                 Frame Size:{" "}
                 <span className="font-medium">{product.frameSize}</span>
               </p>
