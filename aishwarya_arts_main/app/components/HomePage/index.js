@@ -22,41 +22,116 @@ export const people = [
     name: "Arul Raj",
     designation: "Tanjore Art Enthusiast",
     image:
-      "https://plus.unsplash.com/premium_photo-1691030256264-59cdf9414ed1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+      "/assets/testimonials/img1.webp",
   },
   {
     id: 2,
     name: "Priya Selvan",
     designation: "Collector of Tanjore Paintings",
     image:
-      "https://plus.unsplash.com/premium_photo-1723568666044-1b066e26b1fb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=842",
+      "/assets/testimonials/img2.webp",
   },
   {
     id: 3,
     name: "Karthik Subramanian",
     designation: "Art Lover from Chennai",
     image:
-      "https://plus.unsplash.com/premium_photo-1727976369421-f0f11dcb5832?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+      "/assets/testimonials/img3.webp",
   },
   {
     id: 4,
     name: "Anitha Ramachandran",
     designation: "Fan of Traditional Art",
     image:
-      "https://plus.unsplash.com/premium_photo-1682089806994-abcccbaa953a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+      "/assets/testimonials/img4.webp",
   },
   {
     id: 5,
     name: "Vignesh Kumar",
     designation: "Patron of Indian Handicrafts",
     image:
-      "https://images.unsplash.com/photo-1637651808680-d054b0744fe8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+      "/assets/testimonials/img5.webp",
   },
   {
     id: 6,
     name: "Divya Reddy",
     designation: "Lover of South Indian Art",
     image:
-      "https://plus.unsplash.com/premium_photo-1661964253167-abf4772f72cf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+      "/assets/testimonials/img6.webp",
+  },
+];
+
+export const PRODUCTS = [
+  {
+    id: 1,
+    title: "Royal Tanjore Painting – Lakshmi Devi",
+    description:
+      "An exquisite handmade Tanjore painting featuring Goddess Lakshmi, crafted with authentic gold foil and traditional South Indian artistry. Perfect for spiritual and classic interiors.",
+    frameSize: "24x36 inches",
+    price: "₹14,500",
+    rating: 4.9,
+    reviews: 182,
+    image: "/assets/bestsellers/image1.jpg",
+    isNew: true,
+  },
+  {
+    id: 2,
+    title: "Modern Abstract Flow",
+    description:
+      "A captivating blend of color and motion, enhancing modern interiors with artistic sophistication. Hand-painted on premium canvas.",
+    frameSize: "20x28 inches",
+    price: "₹9,800",
+    rating: 4.7,
+    reviews: 112,
+    image: "/assets/bestsellers/image1.jpg",
+    isNew: false,
+  },
+  {
+    id: 3,
+    title: "Tamil Village Life – Heritage Series",
+    description:
+      "Depicts the charm of traditional Tamil village life — bullock carts, temples, and vivid landscapes — crafted using eco-friendly pigments.",
+    frameSize: "18x24 inches",
+    price: "₹11,200",
+    rating: 4.8,
+    reviews: 156,
+    image: "/assets/bestsellers/image1.jpg",
+    isNew: true,
+  },
+  {
+    id: 4,
+    title: "Divine Krishna Portrait",
+    description:
+      "A soulful depiction of Lord Krishna radiating calm and devotion, detailed with delicate strokes — ideal for pooja rooms or serene interiors.",
+    frameSize: "22x30 inches",
+    price: "₹13,900",
+    rating: 4.9,
+    reviews: 204,
+    image: "/assets/bestsellers/image1.jpg",
+    isNew: true,
+  },
+  {
+    id: 5,
+    title: "Nature’s Harmony Landscape",
+    description:
+      "A peaceful hand-painted landscape celebrating Indian greenery and rural stillness — ideal for classic or modern homes.",
+    frameSize: "26x40 inches",
+    price: "₹10,800",
+    rating: 4.6,
+    reviews: 134,
+    image:"/assets/bestsellers/image1.jpg",
+    isNew: false,
+  },
+  {
+    id: 6,
+    title: "Ganesha in Gold Leaf Art",
+    description:
+      "A majestic gold-leaf painting of Lord Ganesha symbolizing wisdom and prosperity, handcrafted for auspicious spaces.",
+    frameSize: "20x24 inches",
+    price: "₹15,200",
+    rating: 5.0,
+    reviews: 298,
+    image:"/assets/bestsellers/image1.jpg",
+    isNew: true,
   },
 ];
