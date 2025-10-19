@@ -136,7 +136,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/30 mt-6 pt-4 text-center text-sm text-white">
-        <p  className="space-x-6">
+        <p className="space-x-6">
           © {new Date().getFullYear()} Aishwarya Art Gallery |  All Rights
           Reserved | Developed by{" "}
           <Link

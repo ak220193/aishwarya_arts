@@ -1,8 +1,6 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
 import dynamic from "next/dynamic";
-
-// Dynamically import Next Image
 const NextImage = dynamic(() => import("next/image"));
 
 const heroImages = [
@@ -18,7 +16,7 @@ const heroImages = [
 export default function Hero() {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
-  const delay = 4000; 
+  const delay = 4000;
   const resetTimeout = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
   };
@@ -34,7 +32,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative w-full h-[30vh] sm:h-[80vh] md:h-[85vh] lg:h-[92.5vh] overflow-hidden"
+      className="relative w-full h-[25vh]  md:h-[50vh] lg:h-[60vh] xl:h-[95vh] overflow-hidden"
       aria-label="Aishwarya Arts Hero Carousel"
     >
       <div
@@ -49,10 +47,10 @@ export default function Hero() {
               src={src}
               alt={`Aishwarya Arts painting ${i + 1}`}
               fill
-              className="object-cover object-center w-full h-full"
+              className="object-cover object-center"
               sizes="100vw"
-              priority={i === 0} 
-              loading={i === 0 ? "eager" : "lazy"} 
+              priority={i === 0}
+              loading={i === 0 ? "eager" : "lazy"}
             />
           </div>
         ))}
