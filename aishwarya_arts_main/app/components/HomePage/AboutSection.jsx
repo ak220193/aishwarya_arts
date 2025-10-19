@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
+import Link from "next/link";
 
 export default function AboutSection() {
   const images = [
@@ -13,13 +14,16 @@ export default function AboutSection() {
   ];
 
   const infoBoxes = [
-    { title: "100+ Years", desc: "of artistic tradition and precision" },
+    {
+      title: "40+ Years Experience",
+      desc: "of artistic tradition and precision",
+    },
     { title: "500+ Designs", desc: "completed with intricate creativity" },
     { title: "Art Enthusiasts", desc: "Cherishing handmade excellence" },
   ];
 
   return (
-    <section className="bg-black/90 w-full h-auto">
+    <section className="bg-black/95 w-full h-auto">
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           {/* Left - Animated Image Grid */}
@@ -53,7 +57,7 @@ export default function AboutSection() {
             <h1 className="text-3xl md:text-4xl font-bold mb-6">
               The Legacy of Tanjore Art
             </h1>
-            
+
             <p className="text-white mb-10  tracking-tight text-xl">
               Rooted in centuries of precision and devotion, Tanjore art blends
               gold, color, and intricate design to reflect timeless tradition.
@@ -62,7 +66,7 @@ export default function AboutSection() {
             </p>
 
             {/* Info Boxes */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+            <div className="relative grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
               {infoBoxes.map((box, idx) => (
                 <motion.div
                   key={idx}
@@ -70,23 +74,25 @@ export default function AboutSection() {
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 >
-                  {/* Glow effect */}
-                  <div className="absolute inset-0 rounded-xl  blur-xl animate-pulse"></div>
-                  <h3 className="relative text-xl font-semibold mb-2 z-10 text-black">
+                  {/* Inner Glow */}
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-tr from-yellow-500/50 via-amber-500/20 to-transparent opacity-70 blur-2xl animate-pulse pointer-events-none"></div>
+
+                  <h3 className="relative text-2xl font-semibold mb-2 z-10 text-black">
                     {box.title}
                   </h3>
-                  <p className="relative text-black text-sm z-10">{box.desc}</p>
+                  <p className="relative text-black text-lg z-10">{box.desc}</p>
                 </motion.div>
               ))}
             </div>
 
-            <motion.button
-              className="relative z-10 text-white py-4  bg-emerald-500 hover:bg-emerald-400 rounded-lg font-medium text-center shadow-lg"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+            <Link
+              href="/tanjore"
+              className="py-4 mt-5 bg-emerald-500 text-center text-xl hover:bg-emerald-600 text-white font-bold rounded-md shadow-lg shadow-emerald-400/50 transition-transform transform hover:scale-105 hover:shadow-emerald-500/70 focus:outline-none focus:ring-4 focus:ring-emerald-300"
+              role="button"
+              aria-label="Explore Tanjore art collections"
             >
               Shop Now
-            </motion.button>
+            </Link>
           </motion.div>
         </div>
       </div>

@@ -2,6 +2,7 @@
 import React from "react";
 import AnimatedTooltip from "./ui/animated-tooltip";
 import { people } from "./index.js";
+import Button from "./Button";
 
 const TooltipWithCTA = () => {
   return (
@@ -20,19 +21,19 @@ const TooltipWithCTA = () => {
       {/* Tooltip + CTA */}
       <div className="flex flex-col sm:flex-row items-center gap-6">
         {/* Animated Tooltip */}
-        <div className="flex justify-center" aria-label="Art enthusiasts avatars">
+        <div
+          className="flex justify-center"
+          aria-label="Art enthusiasts avatars"
+        >
           <AnimatedTooltip items={people} />
         </div>
 
         {/* CTA Button */}
-        <a
-          href="/shop"
-          className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-full shadow-lg shadow-emerald-400/50 transition-transform transform hover:scale-105 hover:shadow-emerald-500/70 focus:outline-none focus:ring-4 focus:ring-emerald-300"
-          role="button"
-          aria-label="Explore Tanjore art collections"
-        >
-          Explore Collections
-        </a>
+        
+          <Button href="/collections" color="emerald" className="">
+            Explore Collections
+          </Button>
+        
       </div>
     </section>
   );
