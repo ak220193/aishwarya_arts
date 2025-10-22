@@ -79,7 +79,7 @@ export default function FeaturedProducts() {
                 fill
                 className="object-cover"
                 placeholder="blur"
-                blurDataURL="/assets/products/placeholder.png"
+                blurDataURL="/assets/bestsellers/image1.jpg"
               />
             </div>
 
