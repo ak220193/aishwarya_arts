@@ -41,7 +41,7 @@ export default function AboutSection() {
                   fill
                   className="object-cover"
                   placeholder="blur"
-                  blurDataURL="/assets/about/placeholder.png"
+                  blurDataURL="/assets/about/Rectangle 53.svg"
                 />
               </motion.div>
             ))}
