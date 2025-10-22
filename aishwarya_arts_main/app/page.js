@@ -1,5 +1,6 @@
 import AboutSection from "./components/HomePage/AboutSection";
 import BestSellers from "./components/HomePage/BestSellers";
+import Faq from "./components/HomePage/Faq";
 import FeaturedProducts from "./components/HomePage/FeaturedProducts";
 import Hero from "./components/HomePage/Hero";
 import Shipping from "./components/HomePage/Shipping";
@@ -19,6 +20,7 @@ export default function Home() {
       <FeaturedProducts/>
       <Shipping/>
       <Testimonial/>
+      <Faq/>
     </main>
   );
 }
