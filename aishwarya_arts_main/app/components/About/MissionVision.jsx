@@ -1,9 +1,68 @@
-import React from 'react'
+"use client";
 
-const MissionVision = () => {
+import React from "react";
+import { motion } from "framer-motion";
+import { Target, Globe2, HeartHandshake } from "lucide-react";
+
+export default function MissionVision() {
+  const cards = [
+    {
+      id: 1,
+      title: "Our Mission",
+      icon: <Target aria-hidden="true" className="text-yellow-600 w-12 h-12" />,
+      text: "To preserve and promote the timeless beauty of Tanjore art by blending traditional craftsmanship with modern digital innovation, creating artwork that bridges heritage and contemporary style.",
+    },
+    {
+      id: 2,
+      title: "Our Vision",
+      icon: <Globe2 aria-hidden="true" className="text-yellow-600 w-12 h-12" />,
+      text: "To become a global name in digital artistry, inspiring new generations to experience the cultural richness of Indian art forms while embracing modern technology and design.",
+    },
+    {
+      id: 3,
+      title: "Our Values",
+      icon: (
+        <HeartHandshake aria-hidden="true" className="text-yellow-600 w-12 h-12" />
+      ),
+      text: "Integrity, creativity, and respect for tradition guide every creation — ensuring each piece carries meaning, craftsmanship, and emotion.",
+    },
+  ];
+
   return (
-    <div>MissionVision</div>
-  )
-}
+    <section
+      className="max-w-7xl mx-auto py-20 px-6 md:px-8 text-center"
+      aria-labelledby="mission-vision-heading"
+    >
+      <h1
+        id="mission-vision-heading"
+        className="text-4xl font-bold mb-12 text-gray-900 tracking-wide"
+      >
+        Our Mission & Vision
+      </h1>
 
-export default MissionVision
+      <div className="grid md:grid-cols-3 gap-10">
+        {cards.map((card, index) => (
+          <motion.article
+            key={card.id}
+            className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.03 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              duration: 0.5,
+              delay: index * 0.1,
+              ease: "easeOut",
+            }}
+          >
+            <div className="flex justify-center mb-6">{card.icon}</div>
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+              {card.title}
+            </h3>
+            <p className="text-gray-700 leading-relaxed text-lg">{card.text}</p>
+          </motion.article>
+        ))}
+      </div>
+    </section>
+  );
+}
