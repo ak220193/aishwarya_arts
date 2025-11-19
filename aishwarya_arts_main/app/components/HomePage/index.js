@@ -2,7 +2,6 @@
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Tanjore Paintings", href: "/tanjore" },
   { label: "Shop", href: "/shop" },
   { label: "Contact Us", href: "/contact" },
   { label: "Blog" , href:"/blog"}
