@@ -16,7 +16,7 @@ const Header = () => {
   const pathname = usePathname() || "";
 
   return (
-    <header className="sticky top-0 z-50 bg-white" role="banner">
+    <header className="sticky top-0 z-50 bg-white border border-b border-b-gray-800" role="banner">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
         {/* Logo */}
         <div className="flex-shrink-0 mx-auto md:mx-0">
@@ -76,7 +76,7 @@ const Header = () => {
                 <Link
                   key={idx}
                   href={item.href}
-                  className="px-4 py-2 rounded-md bg-[#006D5B] text-white hover:bg-[#000000] transition transform duration-300 hover:scale-105"
+                  className="rounded-md bg-[#006D5B] inline-block px-8 py-3  text-white font-semibold bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5  hover:bg-[#000000] transition transform duration-300 hover:scale-105"
                 >
                   {item.label}
                 </Link>
