@@ -136,5 +136,75 @@ export const PRODUCTS = [
 ];
 
 
+export const CardProducts = [
+  {
+    id: 1,
+    name: "Lord Ganesha",
+    category: "Ganesha",
+    frameType: "Flat",
+    img: "/assets/bestsellers/image1.jpg",
+    desc: "Beautifully handcrafted Tanjore painting of Lord Ganesha.",
+    price: 12000,
+    size: "12x16 inch",
+    tags: ["ganesha", "flat", "tanjore"]
+  },
+  {
+    id: 2,
+    name: "Lord Krishna",
+    category: "Krishna",
+    frameType: "2D",
+    img: "/assets/bestsellers/image1.jpg",
+    desc: "Vibrant Krishna artwork in gold foil painting finish with beads.",
+    price: 15000,
+    size: "14x18 inch",
+    tags: ["krishna", "2d", "gold foil"]
+  },
+  {
+    id: 3,
+    name: "Lord Shiva",
+    category: "Shiva",
+    frameType: "3D Embossed",
+    img: "/assets/bestsellers/image1.jpg",
+    desc: "Hand-painted Shiva portrait with traditional detailing.",
+    price: 10500,
+    size: "10x14 inch",
+    tags: ["shiva", "3d", "embossed"]
+  },
+  {
+    id: 4,
+    name: "Lord Ganesha",
+    category: "Ganesha",
+    frameType: "Flat",
+    img: "/assets/bestsellers/image1.jpg",
+    desc: "Beautifully handcrafted Tanjore painting of Lord Ganesha.",
+    price: 12000,
+    size: "12x16 inch",
+    tags: ["ganesha", "flat"]
+  },
+  {
+    id: 5,
+    name: "Lord Krishna",
+    category: "Krishna",
+    frameType: "2D",
+    img: "/assets/bestsellers/image1.jpg",
+    desc: "Vibrant Krishna artwork in gold foil painting finish with beads.",
+    price: 15000,
+    size: "14x18 inch",
+    tags: ["krishna", "2d"]
+  },
+  {
+    id: 6,
+    name: "Lord Shiva",
+    category: "Shiva",
+    frameType: "3D Embossed",
+    img: "/assets/bestsellers/image1.jpg",
+    desc: "Hand-painted Shiva portrait with traditional detailing.",
+    price: 10500,
+    size: "10x14 inch",
+    tags: ["shiva", "3d"]
+  }
+];
+
+
 
 

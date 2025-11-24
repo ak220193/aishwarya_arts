@@ -9,7 +9,7 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer
-      className="bg-[#006d5b] text-white px-6 py-10 mt-10"
+      className="text-black px-6 py-10 mt-10"
       aria-label="Footer"
     >
       {/* Main Grid */}
@@ -26,7 +26,7 @@ const Footer = () => {
               priority
             />
           </Link>
-          <p className="mt-3 text-sm leading-relaxed text-gray-100">
+          <p className="mt-3 text-sm leading-relaxed text-black">
             Bringing the richness of Tanjore tradition to modern homes.
           </p>
         </div>
@@ -135,7 +135,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/30 mt-6 pt-4 text-center text-sm text-white">
+      <div className="border-t border-white/30 mt-6 pt-4 text-center text-sm text-black">
         <p className="space-x-6">
           © {new Date().getFullYear()} Aishwarya Art Gallery |  All Rights
           Reserved | Developed by{" "}
