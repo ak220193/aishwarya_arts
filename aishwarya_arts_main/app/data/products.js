@@ -5,6 +5,12 @@ export const allProducts = [
     slug: "lord-balaji",
     category: "Balaji",
     img: "/assets/Products/3+2/Balaji/balaji-22 frame.jpg",
+    images: [
+      "/assets/Products/webp/balaji mockup-2.webp",
+      "/assets/Products/webp/balaji-3d-mockup-1.webp",
+      "/assets/Products/3+2/Balaji/balaji-22 frame.jpg",
+      "/assets/Products/3+2/Balaji/balaji-3d-mockup-1.jpg",
+    ],
     desc: "Traditional Tanjore painting of Lord Balaji.",
     variations: {
       sizes: [
@@ -20,7 +26,7 @@ export const allProducts = [
         "15x60 inches",
       ],
       frameTypes: ["Flat", "2D", "3D Embossed"],
-      prices: {}, 
+      prices: {},
     },
     tags: ["balaji", "tanjore"],
     inStock: true,
@@ -32,6 +38,12 @@ export const allProducts = [
     slug: "lord-krishna",
     category: "Krishna",
     img: "/assets/Products/webp/RADHEKRISHNA.webp",
+    images: [
+      "/assets/Products/webp/RADHEKRISHNA.webp",
+      "/assets/Products/webp/RADHEKRISHNA.webp",
+      "/assets/Products/webp/RADHEKRISHNA.webp",
+      "/assets/Products/webp/RADHEKRISHNA.webp",
+    ],
     desc: "Vibrant Krishna with handmade Tanjore art work.",
     variations: {
       sizes: [
@@ -55,10 +67,16 @@ export const allProducts = [
 
   {
     id: 3,
-    name: "Lord Shiva",
-    slug: "lord-shiva",
+    name: "Lord Shiva Parvathi",
+    slug: "lord-shiva-parvathi",
     category: "Shiva",
-    img: "/assets/Products/webp/Shiva-1.webp",
+    img: "/assets/Products/24+18/Shiva/ShivaPravathi.jpg",
+    images: [
+      "/assets/Products/24+18/Shiva/Shiva-frame.jpg",
+      "/assets/Products/24+18/Shiva/Shiva-frame.jpg",
+      "/assets/Products/24+18/Shiva/Shiva-frame.jpg",
+      "/assets/Products/24+18/Shiva/Shiva-frame.jpg",
+    ],
     desc: "Detailed Tanjore painting of Lord Shiva.",
     variations: {
       sizes: [
@@ -86,6 +104,12 @@ export const allProducts = [
     slug: "lord-murugan",
     category: "Murugan",
     img: "/assets/Products/webp/Murugan-1.webp",
+    images: [
+      "/assets/Products/webp/Murugan-1.webp",
+      "/assets/Products/webp/Murgan-1-flatwithoutframe.webp",
+      "/assets/Products/webp/Murgan-1-flatwithoutframe.webp",
+      "/assets/Products/webp/Murgan-1-flatwithoutframe.webp",
+    ],
     desc: "Classic Tanjore painting of Lord Murugan.",
     variations: {
       sizes: [
@@ -113,6 +137,12 @@ export const allProducts = [
     slug: "goddess-lakshmi",
     category: "Lakshmi",
     img: "/assets/Products/webp/Lakshmi-with frame.webp",
+    images: [
+      "/assets/Products/webp/Lakshmi-with frame.webp",
+      "/assets/Products/webp/Lakshmi-with frame.webp",
+      "/assets/Products/webp/Lakshmi-with frame.webp",
+      "/assets/Products/webp/Lakshmi-with frame.webp",
+    ],
     desc: "Traditional Tanjore painting of Goddess Lakshmi.",
     variations: {
       sizes: [
@@ -140,6 +170,12 @@ export const allProducts = [
     slug: "goddess-saraswathi",
     category: "Saraswathi",
     img: "/assets/Products/webp/saraswati-flat.webp",
+    images: [
+      "/assets/Products/webp/saraswati-flat.webp",
+      "/assets/Products/24+18/saraswathi/saraswa.hd.jpg",
+      "/assets/Products/24+18/saraswathi/saraswa.hd.jpg",
+      "/assets/Products/24+18/saraswathi/saraswa.hd.jpg",
+    ],
     desc: "Elegant Tanjore artwork of Goddess Saraswathi.",
     variations: {
       sizes: [
@@ -160,13 +196,20 @@ export const allProducts = [
     tags: ["saraswathi", "tanjore"],
     inStock: true,
   },
-   {
+
+  {
     id: 7,
     name: "Lord Ganesha",
-    slug: "god-Ganapthy",
+    slug: "lord-ganesha-1",
     category: "Ganesha",
     img: "/assets/Products/15+12/ganapthy/pilliyar-frame.jpg",
-    desc: "Elegant Tanjore artwork of Goddess Ganesha.",
+    images: [
+      "/assets/Products/15+12/ganapthy/pilliyar-frame.jpg",
+      "/assets/Products/20+16/ganapthy/Ganpathy-hdr.jpg",
+      "/assets/Products/24+18/ganapthy/ganpathy.jpg",
+      "/assets/Products/24+18/ganapthy/ganpathy.jpg",
+    ],
+    desc: "Elegant Tanjore artwork of Lord Ganesha.",
     variations: {
       sizes: [
         "36x24 inches",
@@ -183,16 +226,23 @@ export const allProducts = [
       frameTypes: ["Flat", "2D", "3D Embossed"],
       prices: {},
     },
-    tags: ["Ganesha", "tanjore"],
+    tags: ["ganesha", "tanjore"],
     inStock: true,
   },
-   {
+
+  {
     id: 8,
     name: "Lord Ganesha",
-    slug: "god-Ganapthy",
+    slug: "lord-ganesha-1",
     category: "Ganesha",
     img: "/assets/Products/15+12/ganapthy/pilliyar-frame.jpg",
-    desc: "Elegant Tanjore artwork of Goddess Ganesha.",
+    images: [
+      "/assets/Products/15+12/ganapthy/pilliyar-frame.jpg",
+      "/assets/Products/20+16/ganapthy/Ganpathy-hdr.jpg",
+      "/assets/Products/24+18/ganapthy/ganpathy.jpg",
+      "/assets/Products/24+18/ganapthy/ganpathy.jpg",
+    ],
+    desc: "Elegant Tanjore artwork of Lord Ganesha.",
     variations: {
       sizes: [
         "36x24 inches",
@@ -209,16 +259,24 @@ export const allProducts = [
       frameTypes: ["Flat", "2D", "3D Embossed"],
       prices: {},
     },
-    tags: ["Ganesha", "tanjore"],
+    tags: ["ganesha", "tanjore"],
     inStock: true,
   },
-   {
+
+
+  {
     id: 9,
     name: "Lord Ganesha",
-    slug: "god-Ganapthy",
+    slug: "lord-ganesha-1",
     category: "Ganesha",
     img: "/assets/Products/15+12/ganapthy/pilliyar-frame.jpg",
-    desc: "Elegant Tanjore artwork of Goddess Ganesha.",
+    images: [
+      "/assets/Products/15+12/ganapthy/pilliyar-frame.jpg",
+      "/assets/Products/20+16/ganapthy/Ganpathy-hdr.jpg",
+      "/assets/Products/24+18/ganapthy/ganpathy.jpg",
+      "/assets/Products/24+18/ganapthy/ganpathy.jpg",
+    ],
+    desc: "Elegant Tanjore artwork of Lord Ganesha.",
     variations: {
       sizes: [
         "36x24 inches",
@@ -235,7 +293,8 @@ export const allProducts = [
       frameTypes: ["Flat", "2D", "3D Embossed"],
       prices: {},
     },
-    tags: ["Ganesha", "tanjore"],
+    tags: ["ganesha", "tanjore"],
     inStock: true,
   },
+
 ];
