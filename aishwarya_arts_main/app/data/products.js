@@ -32,7 +32,7 @@ export const allProducts = [
     slug: "lord-krishna",
     category: "Krishna",
     img: "/assets/Products/webp/RADHEKRISHNA.webp",
-    desc: "Vibrant Krishna Tanjore artwork.",
+    desc: "Vibrant Krishna with handmade Tanjore art work.",
     variations: {
       sizes: [
         "36x24 inches",

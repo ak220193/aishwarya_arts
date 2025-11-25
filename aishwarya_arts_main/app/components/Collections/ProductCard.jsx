@@ -37,7 +37,7 @@ const ProductCard = ({ product }) => {
         <img
           src={product.img}
           alt={product.name}
-          className="h-64 w-auto object-cover rounded-lg"
+          className="h-80 w-auto object-cover rounded-lg"
         />
       </div>
 
@@ -45,6 +45,11 @@ const ProductCard = ({ product }) => {
       <h3 className="font-semibold text-[15px] mt-3 leading-tight text-center">
         {product.name}
       </h3>
+
+       {/* Description */}
+      <h5 className="font-medium text-md mt-3 leading-snug text-center">
+        {product.desc}
+      </h5>
 
       {/* Ratings */}
       <div className="flex items-center gap-1 mt-2 justify-center">
