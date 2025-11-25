@@ -139,69 +139,194 @@ export const PRODUCTS = [
 export const CardProducts = [
   {
     id: 1,
-    name: "Lord Ganesha",
-    category: "Ganesha",
-    frameType: "Flat",
-    img: "/assets/bestsellers/image1.jpg",
-    desc: "Beautifully handcrafted Tanjore painting of Lord Ganesha.",
-    price: 12000,
-    size: "12x16 inch",
-    tags: ["ganesha", "flat", "tanjore"]
+    name: "Lord Balaji",
+    slug: "lord-balaji",
+    category: "Balaji",
+    img: "/assets/webp/balaji mockup-2.webp",
+    desc: "Traditional Tanjore painting of Lord Balaji.",
+    
+    variations: {
+      sizes: [
+        "36x24 inches",
+        "48x36 inches",
+        "15x12 inches",
+        "18x14 inches",
+        "20x16 inches",
+        "24x18 inches",
+        "30x24 inches",
+        "60x36 inches",
+        "72x48 inches",
+        "15x60 inches"
+      ],
+      frameTypes: [
+        "Flat",
+        "2D",
+        "3D Embossed"
+      ],
+      prices: {} // you will update later
+    },
+
+    tags: ["balaji", "tanjore"]
   },
+
   {
     id: 2,
     name: "Lord Krishna",
+    slug: "lord-krishna",
     category: "Krishna",
-    frameType: "2D",
-    img: "/assets/bestsellers/image1.jpg",
-    desc: "Vibrant Krishna artwork in gold foil painting finish with beads.",
-    price: 15000,
-    size: "14x18 inch",
-    tags: ["krishna", "2d", "gold foil"]
+    img: "/assets/webp/balaji mockup-2.webp",
+    desc: "Vibrant Krishna Tanjore artwork.",
+    
+    variations: {
+      sizes: [
+        "36x24 inches",
+        "48x36 inches",
+        "15x12 inches",
+        "18x14 inches",
+        "20x16 inches",
+        "24x18 inches",
+        "30x24 inches",
+        "60x36 inches",
+        "72x48 inches",
+        "15x60 inches"
+      ],
+      frameTypes: [
+        "Flat",
+        "2D",
+        "3D Embossed"
+      ],
+      prices: {}
+    },
+
+    tags: ["krishna", "tanjore"]
   },
+
   {
     id: 3,
     name: "Lord Shiva",
+    slug: "lord-shiva",
     category: "Shiva",
-    frameType: "3D Embossed",
-    img: "/assets/bestsellers/image1.jpg",
-    desc: "Hand-painted Shiva portrait with traditional detailing.",
-    price: 10500,
-    size: "10x14 inch",
-    tags: ["shiva", "3d", "embossed"]
+    img: "/assets/webp/Shiva-1.webp",
+    desc: "Detailed Tanjore painting of Lord Shiva.",
+    
+    variations: {
+      sizes: [
+        "36x24 inches",
+        "48x36 inches",
+        "15x12 inches",
+        "18x14 inches",
+        "20x16 inches",
+        "24x18 inches",
+        "30x24 inches",
+        "60x36 inches",
+        "72x48 inches",
+        "15x60 inches"
+      ],
+      frameTypes: [
+        "Flat",
+        "2D",
+        "3D Embossed"
+      ],
+      prices: {}
+    },
+
+    tags: ["shiva", "tanjore"]
   },
+
   {
     id: 4,
-    name: "Lord Ganesha",
-    category: "Ganesha",
-    frameType: "Flat",
-    img: "/assets/bestsellers/image1.jpg",
-    desc: "Beautifully handcrafted Tanjore painting of Lord Ganesha.",
-    price: 12000,
-    size: "12x16 inch",
-    tags: ["ganesha", "flat"]
+    name: "Lord Murugan",
+    slug: "lord-murugan",
+    category: "Murugan",
+    img: "/assets/webp/Murugan-1.webp",
+    desc: "Classic Tanjore painting of Lord Murugan.",
+    
+    variations: {
+      sizes: [
+        "36x24 inches",
+        "48x36 inches",
+        "15x12 inches",
+        "18x14 inches",
+        "20x16 inches",
+        "24x18 inches",
+        "30x24 inches",
+        "60x36 inches",
+        "72x48 inches",
+        "15x60 inches"
+      ],
+      frameTypes: [
+        "Flat",
+        "2D",
+        "3D Embossed"
+      ],
+      prices: {}
+    },
+
+    tags: ["murugan", "tanjore"]
   },
+
   {
     id: 5,
-    name: "Lord Krishna",
-    category: "Krishna",
-    frameType: "2D",
-    img: "/assets/bestsellers/image1.jpg",
-    desc: "Vibrant Krishna artwork in gold foil painting finish with beads.",
-    price: 15000,
-    size: "14x18 inch",
-    tags: ["krishna", "2d"]
+    name: "Goddess Lakshmi",
+    slug: "goddess-lakshmi",
+    category: "Lakshmi",
+    img: "/assets/webp/Lakshmi-with frame.webp",
+    desc: "Traditional Tanjore painting of Goddess Lakshmi.",
+    
+    variations: {
+      sizes: [
+        "36x24 inches",
+        "48x36 inches",
+        "15x12 inches",
+        "18x14 inches",
+        "20x16 inches",
+        "24x18 inches",
+        "30x24 inches",
+        "60x36 inches",
+        "72x48 inches",
+        "15x60 inches"
+      ],
+      frameTypes: [
+        "Flat",
+        "2D",
+        "3D Embossed"
+      ],
+      prices: {}
+    },
+
+    tags: ["lakshmi", "tanjore"]
   },
+
   {
     id: 6,
-    name: "Lord Shiva",
-    category: "Shiva",
-    frameType: "3D Embossed",
-    img: "/assets/bestsellers/image1.jpg",
-    desc: "Hand-painted Shiva portrait with traditional detailing.",
-    price: 10500,
-    size: "10x14 inch",
-    tags: ["shiva", "3d"]
+    name: "Goddess Saraswathi",
+    slug: "goddess-saraswathi",
+    category: "Saraswathi",
+    img: "/assets/webp/saraswati-flat.webp",
+    desc: "Elegant Tanjore artwork of Goddess Saraswathi.",
+    
+    variations: {
+      sizes: [
+        "36x24 inches",
+        "48x36 inches",
+        "15x12 inches",
+        "18x14 inches",
+        "20x16 inches",
+        "24x18 inches",
+        "30x24 inches",
+        "60x36 inches",
+        "72x48 inches",
+        "15x60 inches"
+      ],
+      frameTypes: [
+        "Flat",
+        "2D",
+        "3D Embossed"
+      ],
+      prices: {}
+    },
+
+    tags: ["saraswathi", "tanjore"]
   }
 ];
 
