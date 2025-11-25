@@ -95,9 +95,7 @@ const CollectionsPage = () => {
 
         {/* MAIN CONTENT */}
         <main className="flex-1">
-          <div className="text-sm text-gray-600 mb-4">
-            {filtered.length} Products
-          </div>
+          
 
           {/* IMPORTANT FIX */}
           <ProductGrid products={filtered} />
