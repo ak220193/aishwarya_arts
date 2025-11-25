@@ -19,37 +19,44 @@ const CollectionsPage = () => {
     availability: "",
   });
 
- useEffect(() => {
-  let temp = [...allProducts];
+  useEffect(() => {
+    let temp = [...allProducts];
 
-  // GOD FILTER
-  if (filters.god) {
-    temp = temp.filter((p) => p.category === filters.god);
-  }
+    // ---- GOD FILTER ----
+    if (filters.god) {
+      temp = temp.filter((p) => p.category === filters.god);
+    }
 
-  // FRAME SIZE FILTER
-  if (filters.frameSize) {
-    temp = temp.filter((p) => p.size.includes(filters.frameSize));
-  }
+    // ---- FRAME SIZE FILTER ----
+    if (filters.frameSize) {
+      temp = temp.filter((p) =>
+        p.variations?.sizes?.includes(filters.frameSize)
+      );
+    }
 
-  // PRICE RANGE FILTER
-  temp = temp.filter(
-    (p) => p.price >= filters.min && p.price <= filters.max
-  );
+    // ---- PRICE RANGE FILTER ----
+    temp = temp.filter((p) => {
+      const priceValues = Object.values(p.variations?.prices || {});
 
-  // AVAILABILITY FILTER
-  if (filters.availability === "in-stock") {
-    temp = temp.filter((p) => p.inStock === true);
-  }
+      // If no prices exist → always include product
+      if (priceValues.length === 0) return true;
 
-  if (filters.availability === "out-of-stock") {
-    temp = temp.filter((p) => p.inStock === false);
-  }
+      const minPrice = Math.min(...priceValues);
+      const maxPrice = Math.max(...priceValues);
 
-  // finally update UI
-  setFiltered(temp);
-}, [filters]);
+      return maxPrice >= filters.min && minPrice <= filters.max;
+    });
 
+    // ---- AVAILABILITY FILTER ----
+    if (filters.availability === "in-stock") {
+      temp = temp.filter((p) => p.inStock === true);
+    }
+    if (filters.availability === "out-of-stock") {
+      temp = temp.filter((p) => p.inStock === false);
+    }
+
+    setFiltered(temp);
+  }, [filters]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -59,9 +66,10 @@ const CollectionsPage = () => {
       </div>
 
       <div className="flex gap-10">
-        {/* LEFT SIDE FILTERS */}
+        {/* LEFT FILTERS */}
         <aside className="w-72 hidden md:block p-5 h-fit">
           <h2 className="text-lg font-semibold mb-4">Filter</h2>
+
           <div className="space-y-6 border-t pt-4">
             <GodFilter
               selected={filters.god}
@@ -78,6 +86,7 @@ const CollectionsPage = () => {
               onChange={([min, max]) => setFilters({ ...filters, min, max })}
             />
           </div>
+
           <AvailabilityFilter
             selected={filters.availability}
             onChange={(v) => setFilters({ ...filters, availability: v })}
@@ -86,10 +95,11 @@ const CollectionsPage = () => {
 
         {/* MAIN CONTENT */}
         <main className="flex-1">
-          <div className="text-sm text-gray-600">
+          <div className="text-sm text-gray-600 mb-4">
             {filtered.length} Products
           </div>
 
+          {/* IMPORTANT FIX */}
           <ProductGrid products={filtered} />
         </main>
       </div>
