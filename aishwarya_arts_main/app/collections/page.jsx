@@ -7,6 +7,7 @@ import PriceFilter from "../components/Collections/PriceFilter";
 import ProductGrid from "../components/Collections/ProductGrid";
 import AvailabilityFilter from "../components/Collections/AvailablityFilter";
 import { allProducts } from "../data/products";
+import ModernTanjore from "../components/Collections/ModernTanjore";
 
 const CollectionsPage = () => {
   const [filtered, setFiltered] = useState(allProducts);
@@ -99,6 +100,7 @@ const CollectionsPage = () => {
 
           {/* IMPORTANT FIX */}
           <ProductGrid products={filtered} />
+          <ModernTanjore/>
         </main>
       </div>
     </div>
