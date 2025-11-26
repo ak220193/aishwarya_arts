@@ -1,8 +1,17 @@
 import React from 'react'
+import ContactHeader from '../components/Contact/ContactHeader'
+import ContactInfoCards from '../components/Contact/ContactInfoCards'
+import ContactForm from '../components/Contact/ContactForm'
+import ContactMap from '../components/Contact/ContactMap'
 
 const page = () => {
   return (
-    <div>page</div>
+      <div>
+      <ContactHeader />
+      <ContactInfoCards />
+      <ContactForm />
+      <ContactMap />
+    </div>
   )
 }
 
