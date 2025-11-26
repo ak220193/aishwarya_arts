@@ -55,22 +55,19 @@ export default function ContactAnimation() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <Link href="/contact" legacyBehavior>
-            <a
-              className="inline-block px-8 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5 transform transition-all duration-300"
-              aria-label="Contact Aishwarya Arts"
-            >
-              Contact Us
-            </a>
+          <Link
+            href="/contact"
+            className="inline-block px-8 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5 transform transition-all duration-300"
+            aria-label="Contact Aishwarya Arts"
+          >
+            Contact Us
           </Link>
-
-          <Link href="/products" legacyBehavior>
-            <a
-              className="inline-block px-8 py-3 rounded-full border border-yellow-300 bg-white text-gray-800 font-medium hover:bg-yellow-50 hover:border-yellow-500 transition-colors duration-300"
-              aria-label="Explore Tanjore Art Collection"
-            >
-              Explore Our Collection
-            </a>
+          <Link
+            href="/products"
+            className="inline-block px-8 py-3 rounded-full border border-yellow-300 bg-white text-gray-800 font-medium hover:bg-yellow-50 hover:border-yellow-500 transition-colors duration-300"
+            aria-label="Explore Tanjore Art Collection"
+          >
+            Explore Our Collection
           </Link>
         </motion.div>
 
@@ -99,8 +96,9 @@ export default function ContactAnimation() {
 
       {/* Hidden SEO text */}
       <h3 className="sr-only">
-        Contact Aishwarya Arts — Authentic Tanjore Painting Artists in Tamil Nadu,
-        India. Custom gold foil paintings, deity art, and heritage designs.
+        Contact Aishwarya Arts — Authentic Tanjore Painting Artists in Tamil
+        Nadu, India. Custom gold foil paintings, deity art, and heritage
+        designs.
       </h3>
     </section>
   );
