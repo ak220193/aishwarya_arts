@@ -83,7 +83,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## 📞 Developer
 
 Aishwarya Arts – Tanjore Art Store
+
 Developed by: Akash S M 
+
 Portfolio : www.webxode.com
+
 Contact: 91-9345336311
+
 Company Name : Webxode Technologies
