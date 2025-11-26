@@ -5,22 +5,25 @@ import { Mail, Phone, MapPin } from "lucide-react";
 export default function ContactInfoCards() {
   const items = [
     {
-      icon: <Mail size={40} className="text-black" />,
+      icon: <Mail size={40} className="text-black transition-colors duration-300" />,
       title: "Email Us",
       desc: "We reply within 24 hours.",
       value: "contact.aishwaryaarts@gmail.com",
+      hoverColor: "text-yellow-600",
     },
     {
-      icon: <Phone size={40} className="text-black" />,
+      icon: <Phone size={40} className="text-black transition-colors duration-300" />,
       title: "Call Us",
       desc: "Mon – Sat, 10am – 7pm",
       value: "+91 9655007661",
+      hoverColor: "text-green-600",
     },
     {
-      icon: <MapPin size={40} className="text-black" />,
+      icon: <MapPin size={40} className="text-black transition-colors duration-300" />,
       title: "Visit Us",
       desc: "Our studio & showroom",
       value: "Namakkal, Tamil Nadu",
+      hoverColor: "text-red-600",
     },
   ];
 
@@ -33,7 +36,7 @@ export default function ContactInfoCards() {
             className="flex flex-col items-center group transition-all"
           >
             {/* Icon */}
-            <div className="mb-5 group-hover:scale-110 transition duration-300">
+            <div className={`mb-5 transition duration-300 group-hover:scale-110 ${item.hoverColor}`}>
               {item.icon}
             </div>
 
