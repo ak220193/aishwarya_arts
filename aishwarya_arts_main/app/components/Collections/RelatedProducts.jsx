@@ -9,9 +9,7 @@ export default function RelatedProducts() {
 
   return (
     <div className="my-20 max-w-7xl mx-auto px-4">
-      <h1 className="text-3xl font-bold mb-10 text-center">
-        Related Products
-      </h1>
+      <h1 className="text-3xl font-bold mb-10 text-center">Related Products</h1>
 
       <div className="flex flex-col gap-8">
         {related.map((product) => (
@@ -33,9 +31,7 @@ export default function RelatedProducts() {
             <div className="flex flex-col justify-between flex-1">
               <div>
                 <h3 className="text-2xl font-semibold">{product.name}</h3>
-                <p className="text-gray-600 text-md mt-1">
-                  {product.category}
-                </p>
+                <p className="text-gray-600 text-md mt-1">{product.category}</p>
 
                 {/* RATING */}
                 <div className="flex items-center gap-2 mt-3">
@@ -56,7 +52,7 @@ export default function RelatedProducts() {
 
               {/* CTA BUTTONS */}
               <div className="mt-6 flex flex-row justify-between gap-4">
-                <button className="w-1/2 bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition">
+                <button className="w-1/2 bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition">
                   Buy Now
                 </button>
 

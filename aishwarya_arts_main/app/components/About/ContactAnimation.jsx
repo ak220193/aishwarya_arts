@@ -63,7 +63,7 @@ export default function ContactAnimation() {
             Contact Us
           </Link>
           <Link
-            href="/products"
+            href="/collections"
             className="inline-block px-8 py-3 rounded-full border border-yellow-300 bg-white text-gray-800 font-medium hover:bg-yellow-50 hover:border-yellow-500 transition-colors duration-300"
             aria-label="Explore Tanjore Art Collection"
           >

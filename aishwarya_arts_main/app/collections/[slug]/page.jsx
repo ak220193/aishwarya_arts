@@ -90,7 +90,7 @@ export default function ProductPage({ params }) {
               />
               {/* small badges (in top-left/right of image) */}
               <div className="absolute top-4 left-4">
-                <span className="bg-emerald-700 text-white text-xs px-3 py-1 rounded-md shadow">
+                <span className="bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5  hover:bg-[#000000] transition transform duration-300 hover:scale-105 text-white text-lg px-4 py-2 rounded-md ">
                   New
                 </span>
               </div>
@@ -160,23 +160,31 @@ export default function ProductPage({ params }) {
           </p>
 
           {/* selectors */}
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="mt-6 flex flex-col gap-6">
             {/* size */}
             <div>
               <label className="block text-sm font-medium text-gray-700">
                 Frame Size
               </label>
-              <select
-                value={selectedSize}
-                onChange={(e) => setSelectedSize(e.target.value)}
-                className="mt-2 block w-full rounded-md border-gray-200 shadow-sm p-2"
-              >
-                {product.variations?.sizes?.map((s) => (
-                  <option key={s} value={s}>
-                    {s}
-                  </option>
-                ))}
-              </select>
+              <div className="mt-2 flex flex-wrap gap-3">
+                {product.variations?.sizes?.map((size) => {
+                  const active = selectedSize === size;
+                  return (
+                    <button
+                      key={size}
+                      onClick={() => setSelectedSize(size)}
+                      className={`px-4 py-2 rounded-md border text-sm font-medium transition
+          ${
+            active
+              ? "bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md text-white"
+              : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+          }`}
+                    >
+                      {size}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* painting type / frame */}
@@ -184,17 +192,26 @@ export default function ProductPage({ params }) {
               <label className="block text-sm font-medium text-gray-700">
                 Painting Type
               </label>
-              <select
-                value={selectedFrame}
-                onChange={(e) => setSelectedFrame(e.target.value)}
-                className="mt-2 block w-full rounded-md border-gray-200 shadow-sm p-2"
-              >
-                {product.variations?.frameTypes?.map((f) => (
-                  <option key={f} value={f}>
-                    {f}
-                  </option>
-                ))}
-              </select>
+
+              <div className="mt-2 flex flex-wrap gap-3">
+                {product.variations?.frameTypes?.map((type) => {
+                  const active = selectedFrame === type;
+                  return (
+                    <button
+                      key={type}
+                      onClick={() => setSelectedFrame(type)}
+                      className={`px-4 py-2 rounded-md border text-sm font-medium transition 
+            ${
+              active
+                ? "bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md text-white"
+                : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+            }`}
+                    >
+                      {type}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
@@ -219,7 +236,7 @@ export default function ProductPage({ params }) {
             </div>
 
             <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <button className="w-full bg-emerald-700 text-white py-3 rounded-md font-medium hover:bg-emerald-800 transition">
+              <button className="w-full  text-white py-3 rounded-md font-medium hover:bg-emerald-800 transition"   > 
                 Buy Now
               </button>
 
