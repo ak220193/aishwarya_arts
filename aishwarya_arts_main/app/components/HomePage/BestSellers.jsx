@@ -63,7 +63,7 @@ const BestSellers = () => (
             </button>
             {/* New Tag */}
             {product.isNew && (
-              <span className="absolute top-3 left-0 bg-emerald-600 text-white text-lg font-semibold px-6 py-2 rounded-md">
+              <span className="absolute top-3 left-0 bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5  hover:bg-[#000000] transition transform duration-300 hover:scale-105 text-white text-lg font-semibold px-6 py-2 rounded-md">
                 New
               </span>
             )}
@@ -121,7 +121,7 @@ const BestSellers = () => (
               href={`/shop/${product.id}`}
               itemProp="url"
               prefetch={false}
-              className="mt-5 w-full py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-medium text-center transition"
+              className="mt-5 w-full py-2 bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5 text-white rounded-lg font-medium text-center transition"
             >
               Shop Now
             </Link>

@@ -42,10 +42,7 @@ const Footer = () => {
               <Link href="/about">About Us</Link>
             </li>
             <li>
-              <Link href="/tanjore">Tanjore Paintings</Link>
-            </li>
-            <li>
-              <Link href="/shop">Shop</Link>
+              <Link href="/collections">Collections</Link>
             </li>
             <li>
               <Link href="/contact">Contact</Link>

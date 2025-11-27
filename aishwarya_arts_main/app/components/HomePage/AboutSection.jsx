@@ -87,7 +87,7 @@ export default function AboutSection() {
 
             <Link
               href="/tanjore"
-              className="py-4 mt-5 bg-emerald-500 text-center text-xl hover:bg-emerald-600 text-white font-bold rounded-md shadow-lg shadow-emerald-400/50 transition-transform transform hover:scale-105 hover:shadow-emerald-500/70 focus:outline-none focus:ring-4 focus:ring-emerald-300"
+              className="py-4 mt-5  text-center text-xl bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5 text-white rounded-lg font-medium transition transform"
               role="button"
               aria-label="Explore Tanjore art collections"
             >

@@ -29,11 +29,14 @@ const TooltipWithCTA = () => {
         </div>
 
         {/* CTA Button */}
-        
-          <Button href="/collections" color="emerald" className="">
-            Explore Collections
-          </Button>
-        
+
+        <Button
+          href="/collections"
+          color="emerald"
+          className="bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5  hover:bg-[#000000] transition transform duration-300 hover:scale-105 text-white"
+        >
+          Explore Collections
+        </Button>
       </div>
     </section>
   );
