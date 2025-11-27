@@ -4,7 +4,7 @@ export const allProducts = [
     name: "Lord Balaji",
     slug: "lord-balaji",
     category: "Balaji",
-    img: "/assets/Products/3+2/Balaji/balaji-22 frame.jpg",
+    img: "/assets/Products/3+2/Balaji/balaji-22-frame.jpg",
     images: [
       "/assets/Products/webp/balaji mockup-2.webp",
       "/assets/Products/webp/balaji-3d-mockup-1.webp",
