@@ -43,7 +43,7 @@ const Story = () => {
             alt={`Traditional Tanjore Painting ${currentImage + 1}`}
             fill
             priority={currentImage === 0}
-             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="rounded-2xl shadow-lg object-cover transition-all duration-700"
           />
         </motion.div>
@@ -79,7 +79,11 @@ const Story = () => {
           </p>
 
           <div className=" flex justify-center items-center">
-            <Button href="/about" color="emerald" className="">
+            <Button
+              href="/about"
+              color="emerald"
+              className="bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5  hover:bg-[#000000] transition transform duration-300 hover:scale-105 text-white"
+            >
               Watch Our Video
             </Button>
           </div>

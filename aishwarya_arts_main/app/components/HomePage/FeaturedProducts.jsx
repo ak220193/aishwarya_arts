@@ -15,37 +15,37 @@ export default function FeaturedProducts() {
       size: "12x16 inch",
     },
     {
-      name: "Krishna",
-      img: "/assets/bestsellers/image1.jpg",
-      desc: "Vibrant Krishna artwork in gold foil painting finish with beads.",
+      name: "Saraswathi",
+      img: "/assets/Products/24+18/saraswathi/saraswa.hd.jpg",
+      desc: "Vibrant Saraswathi artwork in gold foil painting finish with beads.",
       price: "₹15,000",
       size: "14x18 inch",
     },
     {
       name: "Shiva",
-      img: "/assets/bestsellers/image1.jpg",
+      img: "/assets/Products/24+18/Shiva/ShivaPravathi.jpg",
       desc: "Hand-painted Shiva portrait with traditional detailing.",
       price: "₹10,500",
       size: "10x14 inch",
     },
     {
-      name: "Ganesha",
-      img: "/assets/bestsellers/image1.jpg",
-      desc: "Beautifully handcrafted Tanjore painting of Lord Ganesha.",
+      name: "RadhaeKrishna",
+      img: "/assets/Products/webp/RADHEKRISHNA.webp",
+      desc: "Beautifully handcrafted Tanjore painting of Lord RadhaeKrishna.",
       price: "₹12,000",
       size: "12x16 inch",
     },
     {
-      name: "Krishna",
-      img: "/assets/bestsellers/image1.jpg",
+      name: "Lord Murga",
+      img: "/assets/Products/24+18/Murugan/Murgan.jpg",
       desc: "Vibrant Krishna artwork in gold foil painting finish with beads.",
       price: "₹15,000",
       size: "14x18 inch",
     },
     {
-      name: "Shiva",
-      img: "/assets/bestsellers/image1.jpg",
-      desc: "Hand-painted Shiva portrait with traditional detailing.",
+      name: "GajaLakshmi",
+      img: "/assets/Products/15+12/lakshmi/Lakshmi.jpg",
+      desc: "Hand-painted GajaLakshmi portrait with traditional detailing.",
       price: "₹10,500",
       size: "10x14 inch",
     },
@@ -57,7 +57,7 @@ export default function FeaturedProducts() {
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-8  text-center cursor-pointer inline-block group">
           Featured Selling Products
-          <span className="block h-1 w-0 bg-emerald-500 transition-all group-hover:w-full mt-1"></span>
+          <span className="block h-1 w-0 bg-red-400 transition-all group-hover:w-full mt-1"></span>
         </h1>
       </div>
 
@@ -96,8 +96,8 @@ export default function FeaturedProducts() {
               </div>
 
               <Link
-                href="/tanjore"
-                className="py-2 mt-5 bg-emerald-500 text-center hover:bg-emerald-600 text-white font-semibold rounded-md  shadow-emerald-400/50 transition-transform transform hover:scale-105 hover:shadow-emerald-500/70 focus:outline-none focus:ring-4 focus:ring-emerald-300"
+                href="/collections"
+                className="py-2 mt-5 text-center bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5 text-white rounded-lg font-medium  transition-transform transform "
                 role="button"
                 aria-label="Explore Tanjore art collections"
               >

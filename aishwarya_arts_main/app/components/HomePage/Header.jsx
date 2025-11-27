@@ -46,7 +46,7 @@ const Header = () => {
             >
               {item.label}
               <span
-                className={`absolute left-0 -bottom-1 h-[2px] bg-[#006D5B] transition-all duration-300 ${
+                className={`absolute left-0 -bottom-1 h-[2px] bg-amber-800 transition-all duration-300 ${
                   pathname === item.href ? "w-full" : "w-0"
                 } group-hover:w-full`}
               />
@@ -76,7 +76,7 @@ const Header = () => {
                 <Link
                   key={idx}
                   href={item.href}
-                  className="rounded-md bg-[#006D5B] inline-block px-8 py-3  text-white font-semibold bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5  hover:bg-[#000000] transition transform duration-300 hover:scale-105"
+                  className="rounded-md  inline-block px-8 py-3  text-white font-semibold bg-gradient-to-r from-yellow-700 to-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-0.5  hover:bg-[#000000] transition transform duration-300 hover:scale-105"
                 >
                   {item.label}
                 </Link>

@@ -63,77 +63,89 @@ export const people = [
 export const PRODUCTS = [
   {
     id: 1,
-    title: "Royal Tanjore Painting – Lakshmi Devi",
+    title: "Lakshmi Devi – Tanjore Gold Foil Painting",
     description:
-      "An exquisite handmade Tanjore painting featuring Goddess Lakshmi, crafted with authentic gold foil and traditional South Indian artistry. Perfect for spiritual and classic interiors.",
+      "A divine Tanjore painting of Goddess Lakshmi, adorned with authentic 22k gold foil and traditional detailing. Ideal for pooja rooms and auspicious décor.",
     frameSize: "24x36 inches",
     price: "₹14,500",
     rating: 4.9,
     reviews: 182,
-    image: "/assets/bestsellers/image1.jpg",
+    image: "/assets/Products/webp/lakshmi-without frame-1.webp",
+    category: "Lakshmi",
     isNew: true,
   },
+
   {
     id: 2,
-    title: "Modern Abstract Flow",
+    title: "Saraswathi Devi – Traditional Tanjore Art",
     description:
-      "A captivating blend of color and motion, enhancing modern interiors with artistic sophistication. Hand-painted on premium canvas.",
-    frameSize: "20x28 inches",
-    price: "₹9,800",
-    rating: 4.7,
-    reviews: 112,
-    image: "/assets/bestsellers/image1.jpg",
-    isNew: false,
+      "Handcrafted Tanjore masterpiece of Goddess Saraswathi, featuring premium gold foil work and intricate ornament detailing.",
+    frameSize: "18x24 inches",
+    price: "₹12,800",
+    rating: 4.8,
+    reviews: 165,
+    image: "/assets/Products/webp/saraswati-flat.webp",
+    category: "Saraswathi",
+    isNew: true,
   },
+
   {
     id: 3,
-    title: "Tamil Village Life – Heritage Series",
+    title: "Balaji – Premium Tanjore Gold Leaf Painting",
     description:
-      "Depicts the charm of traditional Tamil village life — bullock carts, temples, and vivid landscapes — crafted using eco-friendly pigments.",
-    frameSize: "18x24 inches",
-    price: "₹11,200",
-    rating: 4.8,
-    reviews: 156,
-    image: "/assets/bestsellers/image1.jpg",
+      "A powerful depiction of Lord Balaji with rich gold foil layers and traditional embossing. A timeless piece for spiritual spaces.",
+    frameSize: "20x28 inches",
+    price: "₹15,500",
+    rating: 4.9,
+    reviews: 210,
+    image: "/assets/Products/15+12/balaiji/balaji-flat.jpg",
+    category: "Balaji",
     isNew: true,
   },
+
   {
     id: 4,
-    title: "Divine Krishna Portrait",
+    title: "Lord Ganesha – Gold Leaf Art",
     description:
-      "A soulful depiction of Lord Krishna radiating calm and devotion, detailed with delicate strokes — ideal for pooja rooms or serene interiors.",
-    frameSize: "22x30 inches",
-    price: "₹13,900",
-    rating: 4.9,
-    reviews: 204,
-    image: "/assets/bestsellers/image1.jpg",
-    isNew: true,
-  },
-  {
-    id: 5,
-    title: "Nature’s Harmony Landscape",
-    description:
-      "A peaceful hand-painted landscape celebrating Indian greenery and rural stillness — ideal for classic or modern homes.",
-    frameSize: "26x40 inches",
-    price: "₹10,800",
-    rating: 4.6,
-    reviews: 134,
-    image:"/assets/bestsellers/image1.jpg",
-    isNew: false,
-  },
-  {
-    id: 6,
-    title: "Ganesha in Gold Leaf Art",
-    description:
-      "A majestic gold-leaf painting of Lord Ganesha symbolizing wisdom and prosperity, handcrafted for auspicious spaces.",
+      "A majestic gold-leaf painting of Lord Ganesha symbolizing prosperity, wisdom, and spiritual harmony. Fully handcrafted.",
     frameSize: "20x24 inches",
     price: "₹15,200",
     rating: 5.0,
     reviews: 298,
-    image:"/assets/bestsellers/image1.jpg",
+    image: "/assets/Products/18 +14/ganpathy/ganapthy.jpg",
+    category: "Ganesha",
+    isNew: true,
+  },
+
+  {
+    id: 5,
+    title: "Lord Murugan – South Indian Traditional Painting",
+    description:
+      "A vibrant depiction of Lord Murugan in classical South Indian painting style, showcasing divine energy and rich color detailing.",
+    frameSize: "22x30 inches",
+    price: "₹13,400",
+    rating: 4.8,
+    reviews: 142,
+    image: "/assets/Products/18 +14/Murugan/murgan.jpg",
+    category: "Murugan",
+    isNew: false,
+  },
+
+  {
+    id: 6,
+    title: "Lord Shiva – Divine Tandav Portrait",
+    description:
+      "A powerful painting of Lord Shiva radiating spiritual energy and serenity. Hand-painted using premium pigments.",
+    frameSize: "24x30 inches",
+    price: "₹14,900",
+    rating: 4.9,
+    reviews: 173,
+    image: "/assets/Products/24+18/Shiva/ShivaPravathi.jpg",
+    category: "Shiva",
     isNew: true,
   },
 ];
+
 
 
 export const CardProducts = [
